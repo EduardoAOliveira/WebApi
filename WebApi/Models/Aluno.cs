@@ -64,7 +64,7 @@ namespace WebApi.Models
             var itemIndex = listaAlunos.FindIndex(p => p.Id == Aluno.Id);
             if(itemIndex >= 0)
             {
-                Aluno.Id = this.Id;
+                Aluno.Id = Id;
                 listaAlunos[itemIndex] = Aluno;
             }
             else
